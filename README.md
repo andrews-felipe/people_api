@@ -1,4 +1,4 @@
-# Projeto CRUD API Simples
+# Projeto CRUD API Simples .NET Core 3, C#
 
 _Este projeto é para fins didáticos e avaliativos_
 
@@ -6,7 +6,7 @@ Esse projeto é a camada BackEnd do projeto "CRUD PESSOA"
 
 CRUD simples da entidade pessoa:
 
-## Paths/Endpoints
+## Paths
 
 | Método HTTP | Path               | Recurso                     |
 | ----------- | ------------------ | --------------------------- |
@@ -16,7 +16,7 @@ CRUD simples da entidade pessoa:
 | DELETE      | `/api/pessoas{id}` | Excluir Pessoa              |
 
 ## Modelos
-### Modelo **People**
+### People
 
 | Nome  | Tipo     | Validação       |
 | ----- | -------- | --------------- |
