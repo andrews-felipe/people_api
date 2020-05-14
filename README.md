@@ -6,14 +6,26 @@ Esse projeto é a camada BackEnd do projeto "CRUD PESSOA"
 
 CRUD simples da entidade pessoa:
 
-| Método REST | Path               | Recurso                     |
+## Paths/Endpoints
+
+| Método HTTP | Path               | Recurso                     |
 | ----------- | ------------------ | --------------------------- |
 | GET         | `/api/pessoas`     | Listar Pessoas              |
 | POST        | `/api/pessoas`     | Cadastrar nova Pessoa       |
 | PUT         | `/api/pessoas{id}` | Alterar dados de uma Pessoa |
 | DELETE      | `/api/pessoas{id}` | Excluir Pessoa              |
 
-## Conceitos
+## Modelos
+### Modelo **People**
+
+| Nome  | Tipo     | Validação       |
+| ----- | -------- | --------------- |
+| Name  | `string` | Required        |
+| Email | `string` | Required, Regex |
+| Phone | `long`   | Required        |
+
+
+# Conceitos
 
 - **Models** Modelagem de entidades para mapeamento de objetos;
 - **Controllers** Terminais Roteadores, recebem e retornam a requisição a nível de aplicação;
