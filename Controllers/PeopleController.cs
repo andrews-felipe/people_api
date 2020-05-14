@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -76,7 +75,7 @@ namespace People_api.Controllers
             _context.Peoples.Add(people);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPeople", new { id = people.Id }, people);
+            return CreatedAtAction("GetById", new { id = people.Id }, people);
         }
 
         // Excluir Pessoa
